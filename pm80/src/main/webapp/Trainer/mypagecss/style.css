@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* 공통 UI */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  overflow-x: hidden;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  border: 0 none;
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  background-position: center;
+}
+
+.paymentBtn {
+	padding-bottom: 30px;
+	margin: auto 43%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+	
+.payment_btn {
+	width: 400px;
+	height: 80px;
+	background: #f1f1f1;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 30px;	
+}
+.payment_btn a {
+	color: gray;
+	text-decoration: none;
+}
+
+/* trainer-list text*/
+.trainer-wrapper {
+  margin-top: 20px;
+}
+
+.trainer-container {
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.trainer-hover {
+  color: #0078AA;
+  font-size: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 0;
+  position: relative;
+}
+
+.trainer-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #0078AA;
+  transition: 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.trainer-hover:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* trainer-list introduce*/
+.row {
+  display:flex;
+  margin: 0 auto;
+}
+
+.col-md-7 {
+  float: left;
+  position: relative;
+  margin-left: 7%;
+  width: 48%;
+  max-height: 48%;
+}
+
+.col-md-7 h2, .col-md-7-2 h2 {
+  font-weight: 700;
+}
+
+.col-md-7-2 {
+	margin-left: 1%;
+}
+
+.text-muted {
+  font-size: 30px;
+}
+
+.col-md-5 {
+  float: left;
+  position: relative;
+  margin-left: 8%;
+  width: 48%;
+  max-height: 48%;
+}
+
+.lead {
+	max-width: 85%;
+	padding-top: 20px;
+}
+
+/*footer*/
+.top {
+  position: fixed;
+  right: 40px;
+  bottom: 70px;
+  padding:10px;
+  background-color:#0078AA;
+  color:#fff;
+  font-size: 20px;
+  text-decoration:none;
+}

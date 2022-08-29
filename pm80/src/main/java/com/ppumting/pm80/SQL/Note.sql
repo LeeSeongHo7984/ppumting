@@ -1,0 +1,55 @@
+SHOW TABLES;
+
+CREATE TABLE RcvNotes (
+	no			BIGINT		 	PRIMARY KEY	AUTO_INCREMENT,
+	sentid 		VARCHAR(20) 	NOT NULL	DEFAULT	'',
+	userId		VARCHAR(20)		NOT NULL	DEFAULT	'',
+	title		VARCHAR(100)	NOT NULL 	DEFAULT '',
+	msg			VARCHAR(200)	NOT NULL 	DEFAULT '',
+	sentDate 	TIMESTAMP		NOT NULL 	DEFAULT CURRENT_TIMESTAMP,
+	sendnote	BOOLEAN			NOT NULL	DEFAULT FALSE
+);
+
+ALTER TABLE RcvNotes
+ADD CONSTRAINT FK_RcvNotes_Users_userId
+FOREIGN KEY(userId)
+REFERENCES Users (userId);
+
+ALTER TABLE RcvNotes
+DROP FOREIGN KEY FK_RcvNotes_Users_userId;
+
+CREATE TABLE SendNotes (
+	no			BIGINT		 	PRIMARY KEY	AUTO_INCREMENT,
+	userId 		VARCHAR(20) 	NOT NULL	DEFAULT	'',
+	recvid		VARCHAR(20)		NOT NULL	DEFAULT	'',
+	title		VARCHAR(100)	NOT NULL 	DEFAULT '',
+	msg			VARCHAR(200)	NOT NULL 	DEFAULT '',
+	sentDate 	TIMESTAMP		NOT NULL 	DEFAULT CURRENT_TIMESTAMP,
+	sendnote	BOOLEAN			NOT NULL	DEFAULT TRUE
+);
+
+ALTER TABLE SendNotes
+ADD CONSTRAINT FK_SendNotes_Users_userId
+FOREIGN KEY(userId)
+REFERENCES Users (userId);
+
+ALTER TABLE RcvNotes
+DROP FOREIGN KEY FK_SendNotes_Users_userId
+
+DROP TABLE SendNotes;
+DROP TABLE RcvNotes;
+
+INSERT INTO SendNotes (msg, toMsg, userId) 
+VALUES("hi", "한태우", "lty");
+
+DELETE FROM	SendNotes WHERE no = '4';
+SELECT title From SendNotes WHERE no = '3';
+
+SELECT * FROM RcvNotes;
+SELECT * FROM SendNotes;
+SELECT * FROM USERS;
+
+SELECT COUNT(userId) as cnt
+FROM RcvNotes WHERE userId = 'htw';
+
+

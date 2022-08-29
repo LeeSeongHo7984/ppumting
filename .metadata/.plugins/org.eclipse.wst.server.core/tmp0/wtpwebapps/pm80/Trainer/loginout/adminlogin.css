@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Vitro_core';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+body {
+	background-color: white;
+}
+
+#wrap {
+	width: 1320px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#header {
+	display: flex;
+	width: 100%;
+	margin-top: 200px;
+	height: 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+#header .logo {
+	font-family: 'Vitro_core';
+	color: #0078AA;
+}
+
+#login_wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+
+#login_wrap input:not(.login) {
+	width: 430px;
+	height: 55px;
+	padding: 5px;
+	padding-left: 20px;
+	border: 3px solid #d5ecf7;
+	border-radius: 25px;
+	background-color: #d5ecf7;
+}
+
+#login_wrap input:not(.login):focus {
+	border-color: #b8e1f5;
+	outline: none;
+}
+
+#login_wrap .id_input input {
+	margin-bottom: 3px;
+}
+
+.login_form .login {
+	width: 465px;
+	height: 60px;
+	border: 5px solid #0078AA;
+	background: #0078AA;
+	color: #F6F6F6;
+	border-radius: 25px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.sign_up {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: gray;
+}
+
+.sign_up a {
+	font-weight: bold;
+}
+
+#footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

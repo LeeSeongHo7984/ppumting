@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MICEMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEMyungjo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  padding-top : 0;
+}
+
+.notes {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.notes:link { color: #0078AA; }
+
+.notes:visited { color: #f1f1f1; }
+
+.navbar {
+  top: 0;
+  position: relative;
+}
+
+#note_wrap {
+  position: relative;
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  margin-top: 70px;
+  font-family: 'MICEMyungjo';
+}
+
+#note_wrap h1 {
+  font-family: 'Vitro_core';
+  color: #0078AA;
+}
+
+.note_area {
+  width: 1320px;
+  height: 300px;
+  overflow: auto;
+  background-color: #f1f1f1;
+}
+
+.sendnote_btn {
+  width: 130px;
+  height: 40px;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  border: 2px solid #F6F6F6;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #F2DF3A;
+}
+
+.sendnote_btn:hover {
+  animation: rotate_btn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.user, .title, .date {
+	position:absolute;
+	width: 440px;
+	margin-top: -10px;
+}
+
+.users, .titles, .dates {
+	position: absolute;
+	margin-top: 10px;
+}
+
+.user {
+	left: 0;
+}
+
+.users {
+	left: 200px;
+}
+
+.title {
+	left: 480px;
+}
+
+.titles {
+	transform: translateX(-13px);
+}
+
+.date {
+	right: 0;
+}
+
+.dates {
+	right: 200px;
+}
+
+hr {
+	margin-top: 40px;
+}
+
+@keyframes rotate_btn {
+  from {
+    transform: rotate(-15deg);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+}
