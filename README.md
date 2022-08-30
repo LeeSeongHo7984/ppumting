@@ -255,3 +255,36 @@
               <a class="addBu" onclick="back()" style="text-decoration: none;">뒤로가기</a>
             </div>
             </c:if>
+
+## 구현 화면
+### 사용자, 트레이너 로그인
+![image](https://user-images.githubusercontent.com/75346102/187378371-b38b88bb-8301-4e7c-8ff1-ed1e252f34a8.png)
+![image](https://user-images.githubusercontent.com/75346102/187378475-30ab105b-6c9a-4528-a707-bf4bbbaff458.png)
+
+### 사용자, 트레이너 회원가입
+![image](https://user-images.githubusercontent.com/75346102/187378580-a3fcd4b7-8480-4190-8102-31b66b75c030.png)
+![image](https://user-images.githubusercontent.com/75346102/187378633-e17aabe0-06c4-4321-b1f4-f68b882334c8.png)
+
+### 회원정보 수정
+![image](https://user-images.githubusercontent.com/75346102/187379127-cb9a55b3-9d9f-494c-b911-6cef13450118.png)
+
+### 메인
+![image](https://user-images.githubusercontent.com/75346102/187379211-79a86e0b-1cc4-4048-8cb2-3f0f550c6f14.png)
+
+### 게시판
+![image](https://user-images.githubusercontent.com/75346102/187379440-2247dd63-5065-438c-a74b-6c6e33d954d9.png)
+
+### 게시판 등록
+![image](https://user-images.githubusercontent.com/75346102/187379563-5f13be6a-738d-46e2-93ae-12a380286f7e.png)
+
+### 게시글 보기
+![image](https://user-images.githubusercontent.com/75346102/187379778-839e33db-15bf-48e5-bfb3-e4bc6557ce7c.png)
+
+### 게시글 수정
+![image](https://user-images.githubusercontent.com/75346102/187379851-922a194d-2c76-4188-996c-63c97c618a39.png)
+
+### P.P.T
+![image](https://user-images.githubusercontent.com/75346102/187380072-807f2ed1-762b-4ce5-9236-9fd874dbfd33.png)
+
+### 충전
+![image](https://user-images.githubusercontent.com/75346102/187380179-ba8f2135-a66b-4844-b8fd-99467883e6d6.png)
