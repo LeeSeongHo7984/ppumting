@@ -1,6 +1,6 @@
 # ppumting (ppumping dating)
 + 같이 운동하기를 원하는 사람들을 위한 운동파트너 만남 및 PT 결제 사이트 🏃
-+ 2022.7.11 ~ 2022.7.15
++ 2022.7.05 ~ 2022.7.15
 ## 팀 구성원
 + 5명 ( [성호(본인)](https://github.com/LeeSeongHo7984) [상규](https://github.com/parkSangGyu98) [태영](https://github.com/wed456) [기열](https://github.com/BaekKiYeol) [태우](https://github.com/workhan0918) )
 
